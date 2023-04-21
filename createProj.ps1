@@ -23,7 +23,16 @@ dotnet sln add .\"$projectName.Tests"\"$projectName.Tests.csproj"
 # Add a reference to the class library project in the test project
 dotnet add .\"$projectName.Tests"\"$projectName.Tests.csproj" reference .\$projectName\$projectName.csproj
 
+Write-Host "Checking if the project is created" -ForegroundColor Yellow
+
 dotnet run --project .\$projectName\$projectName.csproj
+
+Write-Host "Checking if test project is created" -ForegroundColor Yellow
 
 # Run the tests
 dotnet test .\"$projectName.Tests"
+
+Write-Host "Testing Successful!" -ForegroundColor Green
+Write-Host "Project: $projectName is created " -ForegroundColor Green
+Write-Host "Your project is ready!" -ForegroundColor Green
+

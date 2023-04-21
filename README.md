@@ -16,7 +16,19 @@ The script will create a folder with the name of the project you specified. It w
 
 The script will also execute both projects to make sure they work.
 
-You should see a 'Hello World!' message in the terminal and some test results.
+Successful execution should look like this:
+
+```text
+Checking if the project is created
+Hello, World!
+Checking if test project is created
+
+.... Extra stuff from the test project ....
+
+Passed!  - Failed:     0, Passed:     1, Skipped:     0, Total:     1, Duration: 124 ms - ProjectName.Tests.dll (net7.0)
+Testing Successful!
+Project: ProjectName is created 
+Your project is ready!
 
 This should create the following structure:
 
