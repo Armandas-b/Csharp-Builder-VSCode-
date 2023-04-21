@@ -23,6 +23,7 @@ dotnet sln add .\"$projectName.Tests"\"$projectName.Tests.csproj"
 # Add a reference to the class library project in the test project
 dotnet add .\"$projectName.Tests"\"$projectName.Tests.csproj" reference .\$projectName\$projectName.csproj
 
+dotnet run --project .\$projectName\$projectName.csproj
 
 # Run the tests
 dotnet test .\"$projectName.Tests"
