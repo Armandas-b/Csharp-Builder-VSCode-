@@ -19,6 +19,7 @@ The script will also execute both projects to make sure they work.
 Successful execution should look like this:
 
 ```text
+
 Checking if the project is created
 Hello, World!
 Checking if test project is created
@@ -30,6 +31,9 @@ Testing Successful!
 Project: ProjectName is created 
 Your project is ready!
 
+
+
+```
 This should create the following structure:
 
 ```text
